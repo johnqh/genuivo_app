@@ -7,7 +7,11 @@ import {
 } from '@sudobility/building_blocks';
 import { AuthAction } from '@sudobility/auth-components';
 import type { ComponentType } from 'react';
-import { DocumentTextIcon, ChatBubbleLeftRightIcon, Cog6ToothIcon } from '@heroicons/react/24/outline';
+import {
+  DocumentTextIcon,
+  ChatBubbleLeftRightIcon,
+  Cog6ToothIcon,
+} from '@heroicons/react/24/outline';
 import { useLocalizedNavigate } from '../../hooks/useLocalizedNavigate';
 import { CONSTANTS, SUPPORTED_LANGUAGES, isLanguageSupported } from '../../config/constants';
 import LocalizedLink from './LocalizedLink';
