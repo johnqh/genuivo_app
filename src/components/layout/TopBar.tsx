@@ -7,7 +7,7 @@ import {
 } from '@sudobility/building_blocks';
 import { AuthAction } from '@sudobility/auth-components';
 import type { ComponentType } from 'react';
-import { DocumentTextIcon, ClockIcon, Cog6ToothIcon } from '@heroicons/react/24/outline';
+import { DocumentTextIcon, ChatBubbleLeftRightIcon, Cog6ToothIcon } from '@heroicons/react/24/outline';
 import { useLocalizedNavigate } from '../../hooks/useLocalizedNavigate';
 import { CONSTANTS, SUPPORTED_LANGUAGES, isLanguageSupported } from '../../config/constants';
 import LocalizedLink from './LocalizedLink';
@@ -71,10 +71,10 @@ export function useTopBarConfig(): TopBarConfig {
         href: '/docs',
       },
       {
-        id: 'histories',
-        label: t('nav.histories'),
-        icon: ClockIcon,
-        href: '/histories',
+        id: 'chat',
+        label: t('nav.chat', 'Chat'),
+        icon: ChatBubbleLeftRightIcon,
+        href: '/chat',
       },
       {
         id: 'settings',

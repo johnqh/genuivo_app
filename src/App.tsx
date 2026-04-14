@@ -13,8 +13,7 @@ import ScreenContainer from './components/layout/ScreenContainer';
 const HomePage = lazy(() => import('./pages/HomePage'));
 const LoginPage = lazy(() => import('./pages/LoginPage'));
 const DocsPage = lazy(() => import('./pages/DocsPage'));
-const HistoriesPage = lazy(() => import('./pages/HistoriesPage'));
-const HistoryDetailPage = lazy(() => import('./pages/HistoryDetailPage'));
+const ChatPage = lazy(() => import('./pages/ChatPage'));
 const SettingsPage = lazy(() => import('./pages/SettingsPage'));
 const SitemapPage = lazy(() => import('./pages/SitemapPage'));
 const LanguageRedirect = lazy(() => import('./components/layout/LanguageRedirect'));
@@ -86,18 +85,10 @@ function AppRoutes() {
                 <Route index element={<HomePage />} />
                 <Route path="docs" element={<DocsPage />} />
                 <Route
-                  path="histories"
+                  path="chat"
                   element={
                     <ErrorBoundary>
-                      <HistoriesPage />
-                    </ErrorBoundary>
-                  }
-                />
-                <Route
-                  path="histories/:historyId"
-                  element={
-                    <ErrorBoundary>
-                      <HistoryDetailPage />
+                      <ChatPage />
                     </ErrorBoundary>
                   }
                 />

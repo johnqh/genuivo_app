@@ -6,6 +6,7 @@
   "breadcrumbs": {
     "home": "Home",
     "docs": "Documentation",
+    "chat": "Chat",
     "histories": "Histories",
     "settings": "Settings",
     "sitemap": "Sitemap",
@@ -16,6 +17,7 @@
   "nav": {
     "home": "Home",
     "docs": "Documentation",
+    "chat": "Chat",
     "histories": "Histories",
     "settings": "Settings",
     "sitemap": "Sitemap",
@@ -26,6 +28,7 @@
     "title": "Starter App",
     "description": "This is a template project demonstrating the Sudobility architecture pattern. It shows how to build a full-stack application with shared types, a Hono API, TanStack Query hooks, Zustand stores, and a React web app.",
     "viewDocs": "View Documentation",
+    "startChat": "Start Chat",
     "viewHistories": "View Histories",
     "feature1Title": "Shared Types",
     "feature1Desc": "TypeScript type definitions shared between frontend and backend for type safety across the stack.",

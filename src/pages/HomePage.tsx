@@ -38,10 +38,10 @@ export default function HomePage() {
               {t('home.viewDocs')}
             </LocalizedLink>
             <LocalizedLink
-              to="/histories"
+              to="/chat"
               className={`${buttonVariant('outline')} ${designTokens.radius.lg} px-6 py-3 ${ui.transition.default}`}
             >
-              {t('home.viewHistories')}
+              {t('home.startChat', 'Start Chat')}
             </LocalizedLink>
           </div>
         </div>

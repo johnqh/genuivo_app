@@ -9,6 +9,9 @@ export const CONSTANTS = {
   // API
   API_URL: import.meta.env.VITE_API_URL || 'http://localhost:8022',
 
+  // Google Maps (for GenUI map layouts)
+  GOOGLE_MAPS_API_KEY: import.meta.env.VITE_GOOGLE_MAPS_API_KEY || '',
+
   // Feature flags
   DEV_MODE: import.meta.env.VITE_DEV_MODE === 'true',
   SHOW_PERFORMANCE_MONITOR: import.meta.env.VITE_SHOW_PERFORMANCE_MONITOR === 'true',
@@ -47,7 +50,7 @@ export const CONSTANTS = {
   NAV_ITEMS: [
     { label: 'home', href: '/' },
     { label: 'docs', href: '/docs' },
-    { label: 'histories', href: '/histories', protected: true },
+    { label: 'chat', href: '/chat' },
   ],
 } as const;
 
