@@ -2,7 +2,7 @@
   "name": "@sudobility/genuivo_app",
   "private": true,
   "license": "BUSL-1.1",
-  "version": "1.0.58",
+  "version": "1.0.59",
   "type": "module",
   "scripts": {
     "dev": "bun run process:static && vite",
@@ -30,7 +30,7 @@
     "@sudobility/di_web": "^0.1.167",
     "@sudobility/entity_client": "^0.0.34",
     "@sudobility/genui": "^0.1.27",
-    "@sudobility/genuivo_lib": "^0.0.17",
+    "@sudobility/genuivo_lib": "^0.0.18",
     "@sudobility/seo_lib": "^0.0.10",
     "@sudobility/subscription-components": "^1.0.31",
     "@sudobility/subscription_lib": "^0.0.39",
