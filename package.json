@@ -2,7 +2,7 @@
   "name": "@sudobility/genuivo_app",
   "private": true,
   "license": "BUSL-1.1",
-  "version": "1.0.59",
+  "version": "1.0.60",
   "type": "module",
   "scripts": {
     "dev": "bun run process:static && vite",
@@ -21,8 +21,8 @@
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@sudobility/auth-components": "^1.0.10",
-    "@sudobility/auth_lib": "^0.0.69",
-    "@sudobility/building_blocks": "^0.0.213",
+    "@sudobility/auth_lib": "^0.0.70",
+    "@sudobility/building_blocks": "^0.0.214",
     "@sudobility/components": "^5.0.58",
     "@sudobility/design": "^1.1.29",
     "@sudobility/devops-components": "^2.0.19",
@@ -30,7 +30,7 @@
     "@sudobility/di_web": "^0.1.167",
     "@sudobility/entity_client": "^0.0.34",
     "@sudobility/genui": "^0.1.27",
-    "@sudobility/genuivo_lib": "^0.0.18",
+    "@sudobility/genuivo_lib": "^0.0.19",
     "@sudobility/seo_lib": "^0.0.10",
     "@sudobility/subscription-components": "^1.0.31",
     "@sudobility/subscription_lib": "^0.0.39",
