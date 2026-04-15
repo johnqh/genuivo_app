@@ -1,5 +1,8 @@
 import { initializeWebApp } from '@sudobility/di_web';
+import { FirebaseAuthNetworkService } from '@sudobility/auth_lib';
+import { initializeStarterClient } from '@sudobility/genuivo_client';
 import { initializeI18n } from '../i18n';
+import { CONSTANTS } from './constants';
 
 /**
  * Bootstrap the application by initialising the DI container, Firebase,
@@ -17,5 +20,11 @@ export async function initializeApp(): Promise<void> {
       measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
     },
     initializeI18n,
+  });
+
+  const networkClient = new FirebaseAuthNetworkService();
+  initializeStarterClient({
+    baseUrl: CONSTANTS.API_URL,
+    networkClient,
   });
 }

@@ -16,9 +16,9 @@ export default function ChatPage() {
     analyticsService.trackPageView('/chat', 'Chat');
   }, []);
 
-  const { networkClient, baseUrl, userId, token } = useApi();
+  const { userId, token } = useApi();
   const { currentRenderable, isLoading, error, handleAction, handleSubmit, restart } =
-    useChatManager({ networkClient, baseUrl, userId, token });
+    useChatManager({ userId, token });
 
   const showSubmit = hasInputControls(currentRenderable);
   const showRestart = !showSubmit && !isLoading;
