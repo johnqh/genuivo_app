@@ -27,6 +27,7 @@ PROJECTS=(
     "../genuivo_api:0"
     "../genuivo_client:60"
     "../genuivo_lib:60"
+    "../genui_demo:0"
     "../genuivo_app:0"
     "../genuivo_app_rn:0"
 )
