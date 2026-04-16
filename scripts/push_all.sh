@@ -22,6 +22,7 @@ BASE_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 # Wait times are used for packages that need CI/CD to complete publishing
 # before dependent packages can fetch the new version from npm.
 PROJECTS=(
+    "../genui:0"
     "../genuivo_types:60"
     "../genuivo_api:0"
     "../genuivo_client:60"
