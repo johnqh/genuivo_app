@@ -15,7 +15,7 @@
         "@sudobility/di": "^1.5.52",
         "@sudobility/di_web": "^0.1.167",
         "@sudobility/entity_client": "^0.0.34",
-        "@sudobility/genui": "^0.1.35",
+        "@sudobility/genui": "^0.1.36",
         "@sudobility/genuivo_client": "^0.0.24",
         "@sudobility/genuivo_lib": "^0.0.20",
         "@sudobility/seo_lib": "^0.0.10",
@@ -456,7 +456,7 @@
 
     "@sudobility/entity_client": ["@sudobility/entity_client@0.0.34", "", { "peerDependencies": { "@sudobility/types": "^1.9.61", "@tanstack/react-query": "^5.0.0", "react": "^18.0.0 || ^19.0.0" } }, "sha512-XP84Ozyo63W0+bnQ1fYUILS1Wo0IdKrYPyn9nNOtzNijfOCB/niPdWFNOOL0uSUYWjPEj0I+Bus92SegV/4eWA=="],
 
-    "@sudobility/genui": ["@sudobility/genui@0.1.35", "", { "peerDependencies": { "@sudobility/components": "^5.0.58", "@sudobility/design": "^1.1.29", "@sudobility/genui_types": "^0.0.1", "@vis.gl/react-google-maps": "^1.8.3", "react": ">=18.0.0", "react-dom": ">=18.0.0", "swiper": "^12.1.3" } }, "sha512-aHtLqO/7J7IZlMnI83F6QBplCdNSXovHZFYC+SAkrkHC8h6K+bSNBiVrg0BRvr15qDCUZkKdpwxWjdv9sh6Ycg=="],
+    "@sudobility/genui": ["@sudobility/genui@0.1.36", "", { "peerDependencies": { "@sudobility/components": "^5.0.58", "@sudobility/design": "^1.1.29", "@sudobility/genui_types": "^0.0.1", "@vis.gl/react-google-maps": "^1.8.3", "react": ">=18.0.0", "react-dom": ">=18.0.0", "swiper": "^12.1.3" } }, "sha512-xJ3Mmp7qYX0STGVhcaQHzr3AnVQl97vDqsB7bbp1Z6Rv7OZ8jndfj5Vx/lzJmfuHgJ8nD4KiAy7jjrdB3McIJA=="],
 
     "@sudobility/genui_types": ["@sudobility/genui_types@0.0.1", "", {}, "sha512-upYoJVpy2y+cgIW2TwJtMuPhxzis42Dk5X6UtViTSh61GwnWofwK2atXsOrtDXPFj9vMrxJOVEOEu8UDR90p7g=="],
 
