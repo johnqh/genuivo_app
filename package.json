@@ -2,7 +2,7 @@
   "name": "@sudobility/genuivo_app",
   "private": true,
   "license": "BUSL-1.1",
-  "version": "1.0.75",
+  "version": "1.0.76",
   "type": "module",
   "scripts": {
     "dev": "bun run process:static && vite",
@@ -20,6 +20,13 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@radix-ui/react-alert-dialog": "^1.1.15",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-label": "^2.1.8",
+    "@radix-ui/react-select": "^2.2.6",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@radix-ui/react-switch": "^1.2.6",
+    "@radix-ui/react-tabs": "^1.1.13",
     "@sudobility/auth-components": "^1.0.10",
     "@sudobility/auth_lib": "^0.0.70",
     "@sudobility/building_blocks": "^0.0.214",
@@ -50,7 +57,8 @@
     "react-i18next": "^16.5.4",
     "react-router-dom": "^7.13.0",
     "swiper": "^12.1.3",
-    "tailwind-merge": "^3.4.1"
+    "tailwind-merge": "^3.4.1",
+    "web-vitals": "^5.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
