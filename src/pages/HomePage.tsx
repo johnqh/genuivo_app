@@ -18,7 +18,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <>
+    <article>
       <SEO
         config={seoConfig}
         title={t('home.title')}
@@ -27,10 +27,10 @@ export default function HomePage() {
         ogType="website"
       />
       <Section spacing="5xl" variant="hero" maxWidth="3xl">
-        <div className="text-center">
+        <header className="text-center">
           <h1 className={`${textVariants.heading.h1()} mb-6`}>{t('home.title')}</h1>
           <p className={`${textVariants.body.lg()} mb-8`}>{t('home.description')}</p>
-          <div className="flex gap-4 justify-center">
+          <nav className="flex gap-4 justify-center" aria-label="Primary actions">
             <LocalizedLink
               to="/docs"
               className={`${buttonVariant('primary')} ${designTokens.radius.lg} px-6 py-3 ${ui.transition.default}`}
@@ -43,32 +43,35 @@ export default function HomePage() {
             >
               {t('home.startChat', 'Start Chat')}
             </LocalizedLink>
-          </div>
-        </div>
+          </nav>
+        </header>
       </Section>
 
       <Section spacing="3xl" maxWidth="4xl">
-        <div className="grid md:grid-cols-3 gap-8">
-          <div
-            className={`${ui.spacing.card.md} ${designTokens.radius.lg} border ${ui.border.default}`}
-          >
-            <h3 className={`${textVariants.heading.h4()} mb-2`}>{t('home.feature1Title')}</h3>
-            <p className={textVariants.body.sm()}>{t('home.feature1Desc')}</p>
+        <section aria-label="Features">
+          <h2 className="sr-only">Features</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div
+              className={`${ui.spacing.card.md} ${designTokens.radius.lg} border ${ui.border.default}`}
+            >
+              <h3 className={`${textVariants.heading.h4()} mb-2`}>{t('home.feature1Title')}</h3>
+              <p className={textVariants.body.sm()}>{t('home.feature1Desc')}</p>
+            </div>
+            <div
+              className={`${ui.spacing.card.md} ${designTokens.radius.lg} border ${ui.border.default}`}
+            >
+              <h3 className={`${textVariants.heading.h4()} mb-2`}>{t('home.feature2Title')}</h3>
+              <p className={textVariants.body.sm()}>{t('home.feature2Desc')}</p>
+            </div>
+            <div
+              className={`${ui.spacing.card.md} ${designTokens.radius.lg} border ${ui.border.default}`}
+            >
+              <h3 className={`${textVariants.heading.h4()} mb-2`}>{t('home.feature3Title')}</h3>
+              <p className={textVariants.body.sm()}>{t('home.feature3Desc')}</p>
+            </div>
           </div>
-          <div
-            className={`${ui.spacing.card.md} ${designTokens.radius.lg} border ${ui.border.default}`}
-          >
-            <h3 className={`${textVariants.heading.h4()} mb-2`}>{t('home.feature2Title')}</h3>
-            <p className={textVariants.body.sm()}>{t('home.feature2Desc')}</p>
-          </div>
-          <div
-            className={`${ui.spacing.card.md} ${designTokens.radius.lg} border ${ui.border.default}`}
-          >
-            <h3 className={`${textVariants.heading.h4()} mb-2`}>{t('home.feature3Title')}</h3>
-            <p className={textVariants.body.sm()}>{t('home.feature3Desc')}</p>
-          </div>
-        </div>
+        </section>
       </Section>
-    </>
+    </article>
   );
 }
