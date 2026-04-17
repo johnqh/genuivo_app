@@ -41,12 +41,39 @@
     "title": "Chatt",
     "thinking": "Tänker...",
     "submit": "Skicka",
-    "newConversation": "Ny konversation"
+    "newConversation": "Ny konversation",
+    "webSearchDisclaimer": "Logga in för att få svar i realtid med live-data",
+    "loginCta": "Logga in eller skapa konto"
   },
   "docs": {
     "title": "Documentation",
     "description": "Teknisk dokumentation för projektets ekosystem",
-    "overview": "Översikt"
+    "githubRepo": "Visa på GitHub",
+    "sections": {
+      "overview": "Översikt",
+      "howItWorks": "Så här fungerar det",
+      "chat": "Chatt",
+      "layouts": "Layout",
+      "maps": "Kartor och platser",
+      "clarification": "Förtydligande",
+      "webSearch": "Webbsökning"
+    },
+    "content": {
+      "overviewTitle": "Vad är Genuivo?",
+      "overviewBody": "Genuivo är en AI-driven assistent som svarar på dina frågor med rik, interaktiv gränssnitt – inte bara vanliga texter. Fråga om restauranger, öppna hus, resor eller vad som helst annat, och få kartor, listor, länkar och strukturerade svar som du kan handla på.",
+      "howItWorksTitle": "Så här fungerar det",
+      "howItWorksBody": "När du ställer en fråga skickar Genuivo din begäran till en AI som förstår hur man bygger visuella gränssnitt. I stället för att returnera en vägg av text returnerar den en strukturerad UI-träd – en kombination av titlar, listor, kartor, kort och inmatningskontroller som appen återger natively. Om den behöver mer information från dig, frågar den med inmatningsfält. Om den behöver levande data, söker den automatiskt på webben.",
+      "chatTitle": "Chatt",
+      "chatBody": "Chatt-sidan är din huvudsakliga interaktionspunkt. Skriv din fråga, och AI:n svarar med ett visuellt svar. Om AI:n behöver mer information (t.ex. din stad eller preferenser) visas inmatningsfält som du kan fylla i. När den har tillräckligt med information levererar den ett komplett svar med det bästa layoutet för innehållet – en karta för platser, en lista för jämförelser, eller en paragraf för förklaringar.",
+      "layoutsTitle": "Layout",
+      "layoutsBody": "Genuivo stöder ett rikt utbud av layoutar för att visa information:\n\n• Paragraf — textblock för förklaringar och sammanfattningar\n• Lista — vertikala listor för steg-för-steg-information eller rankade objekt\n• Raster — tvåkolumnsraster för visuella jämförelser\n• Karta — interaktiva kartor med pinnar för platser och adresser\n• Länkar — klickbara länkar till externa webbplatser\n• Kort — titelade kort med bilder, undertyper och detaljer\n• Inmatning — textfält, rullgardiner, datumväljare och växlar för att samla dina preferenser",
+      "mapsTitle": "Kartor och platser",
+      "mapsBody": "När du frågar om fysiska platser – restauranger, butiker, öppna hus, parker – visar Genuivo dem på en interaktiv karta med pilar. Varje pil visar platsens namn och adress. Under kartan finns en kompletterande lista med ytterligare uppgifter. Alla koordinater och adresser kommer från verifierad data eller live-webbsökresultat.",
+      "clarificationTitle": "Förtydligande",
+      "clarificationBody": "Om din fråga saknar viktiga uppgifter kommer AI:n att fråga innan den gissar. Till exempel kommer att fråga efter din stad, matpreferens och budget om du säger \"hitta ett restaurang för mig\". AI:n ställer alla frågor på en gång – ingen dialog. När du har skickat dina svar får du resultatet direkt.",
+      "webSearchTitle": "Webbsökning",
+      "webSearchBody": "För frågor som behöver aktuell, realtidsinformation – som öppna huslistor, händelser idag eller livepriser – söker Genuivo automatiskt webben. Den samlar resultat från flera källor, extraherar de relevanta fakta och presenterar dem i en strukturerad layout. Du får verklig data, inte gissningar."
+    }
   },
   "histories": {
     "title": "Histories",

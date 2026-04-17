@@ -41,12 +41,39 @@
     "title": "Chat",
     "thinking": "Denken...",
     "submit": "Einreichen",
-    "newConversation": "Neue Konversation"
+    "newConversation": "Neue Konversation",
+    "webSearchDisclaimer": "Melden Sie sich an, um Echtzeit-Antworten mit Echtzeit-Daten zu erhalten",
+    "loginCta": "Einloggen oder Konto erstellen"
   },
   "docs": {
     "title": "Documentation",
     "description": "Technische Dokumentation für das Projekt-Ökosystem",
-    "overview": "Übersicht"
+    "githubRepo": "Auf GitHub ansehen",
+    "sections": {
+      "overview": "Übersicht",
+      "howItWorks": "So funktioniert es",
+      "chat": "Chat",
+      "layouts": "Layouts",
+      "maps": "Karten & Orte",
+      "clarification": "Klärung",
+      "webSearch": "Web-Suche"
+    },
+    "content": {
+      "overviewTitle": "Was ist Genuivo?",
+      "overviewBody": "Genuivo ist ein künstlicher Intelligenz-Unterstützer, der auf Ihre Fragen mit reichhaltiger, interaktiver Benutzeroberfläche antwortet - nicht nur mit einfachem Text. Fragen Sie nach Restaurants, offenen Haushalten, Reisen oder sonstigen Themen und erhalten Sie Karten, Listen, Links und strukturierte Antworten, die Sie direkt nutzen können.",
+      "howItWorksTitle": "So funktioniert es",
+      "howItWorksBody": "Wenn Sie eine Frage stellen, sendet Genuivo Ihre Anfrage an eine KI, die versteht, wie man visuelle Oberflächen erstellt. Anstatt eine Wand aus Text zurückzugeben, liefert sie einen strukturierten UI-Baum – eine Kombination aus Titeln, Listen, Karten, Karten und Eingabesteuerelementen, die die App native rendert. Wenn sie weitere Informationen von Ihnen benötigt, fragt sie mit Eingabefeldern nach. Wenn sie Echtzeitdaten benötigt, sucht sie automatisch im Web.",
+      "chatTitle": "Chat",
+      "chatBody": "Die Chat-Seite ist Ihr Hauptinteraktionspunkt. Geben Sie Ihre Frage ein, und die KI antwortet mit einer visuellen Antwort. Wenn die KI weitere Details benötigt (z. B. Ihre Stadt oder Ihre Präferenzen), zeigt sie Eingabefelder an, die Sie ausfüllen sollen. Sobald sie genügend Informationen hat, liefert sie eine vollständige Antwort mit der optimalen Layout für den Inhalt – eine Karte für Orte, eine Liste für Vergleiche, einen Absatz für Erklärungen.",
+      "layoutsTitle": "Layouts",
+      "layoutsBody": "Genuivo unterstützt eine Vielzahl von Layouts zur Darstellung von Informationen:\n\n• Absatz — Textblöcke für Erklärungen und Zusammenfassungen\n• Liste — vertikale Listen für schrittweise Informationen oder sortierte Elemente\n• Raster — zweispaltige Raster für visuelle Vergleiche\n• Karte — interaktive Karten mit Pins für Orte und Adressen\n• Links — anklickbare Links zu externen Websites\n• Karten — überschriebene Karten mit Bildern, Untertiteln und Details\n• Eingaben — Textfelder, Dropdown-Listen, Datumsauswahl und Umschalter zur Erfassung Ihrer Präferenzen",
+      "mapsTitle": "Karten & Orte",
+      "mapsBody": "Wenn Sie nach physischen Orten wie Restaurants, Geschäften, offenen Haushalten oder Parks fragen, zeigt Genuivo diese auf einer interaktiven Karte mit Pins an. Jeder Pin zeigt den Ortsnamen und die Adresse an. Unter der Karte finden Sie eine ergänzende Liste mit zusätzlichen Informationen. Alle Koordinaten und Adressen stammen aus verifizierten Daten oder Echtzeit-Web-Suchergebnissen.",
+      "clarificationTitle": "Klärung",
+      "clarificationBody": "Wenn Ihre Frage wichtige Details fehlt, wird die KI vorher fragen, bevor sie raten. Zum Beispiel wird die Anfrage \"Finde mir ein Restaurant\" nach Ihrer Stadt, Ihrer Küchenpräferenz und Ihrem Budget fragen. Die KI stellt alle Fragen gleichzeitig – keine Rück- und Vorwärtsinteraktionen. Nachdem Sie Ihre Antworten abgeschickt haben, liefert sie das Endergebnis sofort.",
+      "webSearchTitle": "Web-Suche",
+      "webSearchBody": "Für Fragen, die aktuelle, Echtzeit-Informationen erfordern – wie offene Haustour-Listings, heutige Veranstaltungen oder Live-Preise – sucht Genuivo automatisch im Web. Es sammelt Ergebnisse aus mehreren Quellen, extrahiert die relevanten Fakten und präsentiert sie in einer strukturierten Darstellung. Sie erhalten echte Daten, keine Vermutungen."
+    }
   },
   "histories": {
     "title": "Histories",

@@ -41,12 +41,39 @@
     "title": "Chat",
     "thinking": "Pensando...",
     "submit": "Enviar",
-    "newConversation": "Nova conversa"
+    "newConversation": "Nova conversa",
+    "webSearchDisclaimer": "Faça login para obter respostas em tempo real com dados ao vivo",
+    "loginCta": "Entrar ou criar conta"
   },
   "docs": {
     "title": "Documentation",
     "description": "Documentação técnica para o ecossistema do projeto",
-    "overview": "Visão geral"
+    "githubRepo": "Ver no GitHub",
+    "sections": {
+      "overview": "Visão geral",
+      "howItWorks": "Como funciona",
+      "chat": "Chat",
+      "layouts": "Layouts",
+      "maps": "Mapas e locais",
+      "clarification": "Esclarecimento",
+      "webSearch": "Pesquisa na web"
+    },
+    "content": {
+      "overviewTitle": "O que é Genuivo?",
+      "overviewBody": "Genuivo é um assistente alimentado por IA que responde às suas perguntas com uma interface rica e interativa — não apenas texto simples. Pergunte sobre restaurantes, casas em aberto, viagens ou qualquer outra coisa, e obtenha mapas, listas, links e respostas estruturadas que você pode ação.",
+      "howItWorksTitle": "Como funciona",
+      "howItWorksBody": "Quando você faz uma pergunta, o Genuivo envia sua solicitação para uma IA que entende como criar interfaces visuais. Em vez de retornar um bloco de texto, ele retorna uma árvore de interface visual estruturada — uma combinação de títulos, listas, mapas, cartões e controles de entrada que o aplicativo renderiza nativamente. Se precisar de mais informações de você, ele pede com campos de entrada. Se precisar de dados em tempo real, ele pesquisa automaticamente na web.",
+      "chatTitle": "Chat",
+      "chatBody": "A página de bate-papo é o seu principal ponto de interação. Digite sua pergunta, e a IA responde com uma resposta visual. Se a IA precisar de mais detalhes (como sua cidade ou preferências), ela exibirá campos de entrada para você preencher. Assim que tiver informações suficientes, ela fornecerá uma resposta completa com a melhor disposição para o conteúdo — um mapa para locais, uma lista para comparações, um parágrafo para explicações.",
+      "layoutsTitle": "Layouts",
+      "layoutsBody": "O Genuivo suporta um conjunto rico de layouts para apresentar informações:\n\n• Parágrafo — blocos de texto para explicações e resumos\n• Lista — listas verticais para informações passo a passo ou itens classificados\n• Grade — grades de duas colunas para comparações visuais\n• Mapa — mapas interativos com pinos para locais e endereços\n• Links — links clicáveis para sites externos\n• Cartões — cartões com títulos, imagens, subtítulos e detalhes\n• Entradas — campos de texto, listas suspensas, seletores de data e interruptores para coletar suas preferências",
+      "mapsTitle": "Mapas e locais",
+      "mapsBody": "Quando você faz perguntas sobre locais físicos — restaurantes, lojas, casas abertas, parques — o Genuivo os exibe em um mapa interativo com marcadores. Cada marcador mostra o nome do local e o endereço. Abaixo do mapa, uma lista complementar fornece detalhes adicionais. Todas as coordenadas e endereços vêm de dados verificados ou resultados de pesquisas em tempo real na web.",
+      "clarificationTitle": "Esclarecimento",
+      "clarificationBody": "Se sua pergunta estiver faltando detalhes importantes, a IA fará perguntas antes de adivinhar. Por exemplo, pedir \"encontre um restaurante para mim\" fará perguntas sobre sua cidade, preferência de culinária e orçamento. A IA faz todas as perguntas de uma vez — sem ida e volta. Após você enviar suas respostas, ela entrega o resultado final imediatamente.",
+      "webSearchTitle": "Pesquisa na web",
+      "webSearchBody": "Para perguntas que precisam de informações atuais e em tempo real — como listagens de visitas, eventos de hoje ou preços ao vivo — o Genuivo pesquisa automaticamente a web. Ele coleta resultados de várias fontes, extrai os fatos relevantes e os apresenta em uma disposição estruturada. Você obtém dados reais, não adivinhações."
+    }
   },
   "histories": {
     "title": "Histories",

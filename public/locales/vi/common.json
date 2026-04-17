@@ -41,12 +41,39 @@
     "title": "Trò chuyện",
     "thinking": "Đang nghĩ...",
     "submit": "Gửi",
-    "newConversation": "Cuộc trò chuyện mới"
+    "newConversation": "Cuộc trò chuyện mới",
+    "webSearchDisclaimer": "Đăng nhập để nhận câu trả lời theo thời gian thực với dữ liệu trực tiếp",
+    "loginCta": "Đăng nhập hoặc tạo tài khoản"
   },
   "docs": {
     "title": "Documentation",
     "description": "Tài liệu kỹ thuật cho hệ sinh thái dự án",
-    "overview": "Tổng quan"
+    "githubRepo": "Xem trên GitHub",
+    "sections": {
+      "overview": "Tổng quan",
+      "howItWorks": "Cách hoạt động",
+      "chat": "Trò chuyện",
+      "layouts": "Bố cục",
+      "maps": "Bản đồ và địa điểm",
+      "clarification": "Làm rõ",
+      "webSearch": "Tìm kiếm trên web"
+    },
+    "content": {
+      "overviewTitle": "Genuivo là gì?",
+      "overviewBody": "Genuivo là một trợ lý được tích hợp trí tuệ nhân tạo, phản hồi các câu hỏi của bạn bằng giao diện người dùng phong phú và tương tác — không chỉ là văn bản đơn thuần. Hỏi về nhà hàng, nhà mở cửa, du lịch hoặc bất cứ điều gì khác, và nhận bản đồ, danh sách, liên kết và câu trả lời có cấu trúc mà bạn có thể hành động.",
+      "howItWorksTitle": "Cách hoạt động",
+      "howItWorksBody": "Khi bạn đặt câu hỏi, Genuivo gửi yêu cầu của bạn đến một trí tuệ nhân tạo hiểu cách xây dựng giao diện trực quan. Thay vì trả về một khối văn bản, nó trả về một cây giao diện người dùng được cấu trúc — sự kết hợp giữa tiêu đề, danh sách, bản đồ, thẻ và các điều khiển nhập liệu mà ứng dụng sẽ hiển thị một cách bản địa. Nếu nó cần thêm thông tin từ bạn, nó sẽ hỏi bằng các trường nhập liệu. Nếu cần dữ liệu thời gian thực, nó sẽ tự động tìm kiếm trên web.",
+      "chatTitle": "Trò chuyện",
+      "chatBody": "Trang Chat là điểm tương tác chính của bạn. Gõ câu hỏi của bạn, và AI sẽ trả lời bằng câu trả lời trực quan. Nếu AI cần thêm chi tiết (như thành phố của bạn hoặc sở thích), nó sẽ hiển thị các trường nhập để bạn điền thông tin. Khi đã có đủ thông tin, AI sẽ cung cấp câu trả lời đầy đủ với bố cục tốt nhất cho nội dung — bản đồ cho các địa điểm, danh sách cho so sánh, đoạn văn cho giải thích.",
+      "layoutsTitle": "Bố cục",
+      "layoutsBody": "Genuivo hỗ trợ một loạt bố cục phong phú để trình bày thông tin:\n\n• Đoạn văn — các khối văn bản để giải thích và tóm tắt\n• Danh sách — các danh sách dọc để trình bày thông tin theo từng bước hoặc các mục được xếp hạng\n• Bảng lưới — các bảng hai cột để so sánh trực quan\n• Bản đồ — bản đồ tương tác với các điểm đánh dấu cho địa điểm và địa chỉ\n• Liên kết — các liên kết có thể nhấp để truy cập các trang web bên ngoài\n• Thẻ — các thẻ có tiêu đề, hình ảnh, phụ đề và chi tiết\n• Trường nhập — các trường văn bản, danh sách thả xuống, bộ chọn ngày và nút chuyển đổi để thu thập sở thích của bạn",
+      "mapsTitle": "Bản đồ và địa điểm",
+      "mapsBody": "Khi bạn hỏi về các địa điểm vật lý — nhà hàng, cửa hàng, nhà mở cửa tham quan, công viên — Genuivo sẽ hiển thị chúng trên bản đồ tương tác với các điểm đánh dấu. Mỗi điểm đánh dấu hiển thị tên địa điểm và địa chỉ. Dưới bản đồ là một danh sách đi kèm cung cấp thêm thông tin chi tiết. Tất cả tọa độ và địa chỉ đều được lấy từ dữ liệu đã được xác minh hoặc kết quả tìm kiếm trực tuyến.",
+      "clarificationTitle": "Làm rõ",
+      "clarificationBody": "Nếu câu hỏi của bạn thiếu các chi tiết quan trọng, AI sẽ hỏi trước khi suy đoán. Ví dụ, khi bạn hỏi \"tìm giúp tôi một nhà hàng\", AI sẽ hỏi về thành phố của bạn, sở thích về món ăn và ngân sách. AI sẽ đặt tất cả các câu hỏi cùng một lúc — không cần trao đổi qua lại. Sau khi bạn gửi câu trả lời, AI sẽ cung cấp kết quả cuối cùng ngay lập tức.",
+      "webSearchTitle": "Tìm kiếm trên web",
+      "webSearchBody": "Đối với những câu hỏi cần thông tin hiện tại, thời gian thực — như danh sách nhà mở cửa tham quan, sự kiện hôm nay hoặc giá cả trực tiếp — Genuivo tự động tìm kiếm trên web. Nó thu thập kết quả từ nhiều nguồn, trích xuất các sự kiện liên quan và trình bày chúng theo bố cục có cấu trúc. Bạn sẽ nhận được dữ liệu thực tế, chứ không phải suy đoán."
+    }
   },
   "histories": {
     "title": "Histories",

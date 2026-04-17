@@ -41,12 +41,39 @@
     "title": "Chat",
     "thinking": "Pensando...",
     "submit": "Enviar",
-    "newConversation": "Nueva conversación"
+    "newConversation": "Nueva conversación",
+    "webSearchDisclaimer": "Inicie sesión para obtener respuestas en tiempo real con datos en vivo",
+    "loginCta": "Iniciar sesión o crear cuenta"
   },
   "docs": {
     "title": "Documentation",
     "description": "Documentación técnica para el ecosistema del proyecto",
-    "overview": "Resumen"
+    "githubRepo": "Ver en GitHub",
+    "sections": {
+      "overview": "Resumen",
+      "howItWorks": "Cómo funciona",
+      "chat": "Chat",
+      "layouts": "Diseños",
+      "maps": "Mapas y lugares",
+      "clarification": "Aclaración",
+      "webSearch": "Búsqueda web"
+    },
+    "content": {
+      "overviewTitle": "¿Qué es Genuivo?",
+      "overviewBody": "Genuivo es un asistente impulsado por IA que responde a sus preguntas con una interfaz rica e interactiva, no solo con texto plano. Pregunte sobre restaurantes, casas en venta, viajes o cualquier otro tema, y obtenga mapas, listas, enlaces y respuestas estructuradas que puede actuar.",
+      "howItWorksTitle": "Cómo funciona",
+      "howItWorksBody": "Cuando haces una pregunta, Genuivo envía tu solicitud a una IA que entiende cómo crear interfaces visuales. En lugar de devolver un muro de texto, devuelve un árbol de interfaz de usuario estructurado: una combinación de títulos, listas, mapas, tarjetas y controles de entrada que la aplicación representa de forma nativa. Si necesita más información de ti, te lo pide mediante campos de entrada. Si necesita datos en tiempo real, busca automáticamente en internet.",
+      "chatTitle": "Chat",
+      "chatBody": "La página de Chat es su principal punto de interacción. Escriba su pregunta y la IA responde con una respuesta visual. Si la IA necesita más detalles (como su ciudad o preferencias), mostrará campos de entrada para que usted los complete. Una vez que tenga suficiente información, proporcionará una respuesta completa con la mejor disposición para el contenido: un mapa para lugares, una lista para comparaciones, un párrafo para explicaciones.",
+      "layoutsTitle": "Diseños",
+      "layoutsBody": "Genuivo admite un amplio conjunto de diseños para presentar información:\n\n• Párrafo — bloques de texto para explicaciones y resúmenes\n• Lista — listas verticales para información paso a paso o elementos clasificados\n• Cuadrícula — cuadrículas de dos columnas para comparaciones visuales\n• Mapa — mapas interactivos con marcadores para lugares y direcciones\n• Enlaces — enlaces clicables a sitios web externos\n• Tarjetas — tarjetas con título, imágenes, subtítulos y detalles\n• Entradas — campos de texto, listas desplegables, seleccionadores de fecha y interruptores para recopilar sus preferencias",
+      "mapsTitle": "Mapas y lugares",
+      "mapsBody": "Cuando preguntas sobre ubicaciones físicas — restaurantes, tiendas, casas en venta, parques — Genuivo las muestra en un mapa interactivo con marcadores. Cada marcador muestra el nombre del lugar y la dirección. Debajo del mapa, una lista complementaria proporciona detalles adicionales. Todas las coordenadas y direcciones provienen de datos verificados o resultados de búsquedas en tiempo real.",
+      "clarificationTitle": "Aclaración",
+      "clarificationBody": "Si su pregunta falta detalles clave, la IA hará preguntas antes de adivinar. Por ejemplo, preguntar \"encuéntrame un restaurante\" provocará preguntas sobre su ciudad, preferencia de cocina y presupuesto. La IA hace todas las preguntas a la vez, sin ida y vuelta. Después de que envíe sus respuestas, entregará el resultado final inmediatamente.",
+      "webSearchTitle": "Búsqueda web",
+      "webSearchBody": "Para preguntas que requieren información actual y en tiempo real, como listados de casas en venta, eventos de hoy o precios en vivo, Genuivo busca automáticamente en internet. Recopila resultados de múltiples fuentes, extrae los hechos relevantes y los presenta en una disposición estructurada. Obtiene datos reales, no conjeturas."
+    }
   },
   "histories": {
     "title": "Histories",

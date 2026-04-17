@@ -1,17 +1,19 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { GenUI } from '@sudobility/genui';
-import { Button } from '@sudobility/components';
 import { useApi } from '@sudobility/building_blocks/firebase';
 import { SEO } from '@sudobility/seo_lib';
+import { buttonVariant, designTokens } from '@sudobility/design';
 import { useChatManager, hasInputControls } from '@sudobility/genuivo_lib';
 import { useSetPageConfig } from '../hooks/usePageConfig';
+import { useLocalizedNavigate } from '../hooks/useLocalizedNavigate';
 import { GOOGLE_MAPS_API_KEY } from '../config/chat';
 import { seoConfig } from '../config/seo';
 import { analyticsService } from '../config/analytics';
 
 export default function ChatPage() {
   const { t } = useTranslation('common');
+  const { navigate } = useLocalizedNavigate();
   useSetPageConfig({ maxWidth: '4xl', contentPadding: 'md' });
 
   useEffect(() => {
@@ -19,6 +21,7 @@ export default function ChatPage() {
   }, []);
 
   const { userId, token } = useApi();
+  const isLoggedIn = Boolean(userId && token);
   const { currentRenderable, isLoading, error, handleAction, handleSubmit, restart } =
     useChatManager({ userId, token });
 
@@ -52,20 +55,38 @@ export default function ChatPage() {
         ) : null}
 
         {showSubmit && !isLoading ? (
-          <Button type="button" onClick={handleSubmit} className="w-full hover:scale-100">
+          <button
+            type="button"
+            onClick={handleSubmit}
+            className={`${buttonVariant('primary')} ${designTokens.radius.lg} w-full`}
+          >
             {t('chat.submit')}
-          </Button>
+          </button>
         ) : null}
 
         {showRestart ? (
-          <Button
+          <button
             type="button"
-            variant="secondary"
             onClick={restart}
-            className="w-full hover:scale-100"
+            className={`${buttonVariant('secondary')} ${designTokens.radius.lg} w-full`}
           >
             {t('chat.newConversation')}
-          </Button>
+          </button>
+        ) : null}
+
+        {!isLoggedIn ? (
+          <div className="flex items-center justify-between rounded-lg border border-blue-200 bg-blue-50 p-4 dark:border-blue-800 dark:bg-blue-950">
+            <p className="text-sm text-blue-700 dark:text-blue-300">
+              {t('chat.webSearchDisclaimer')}
+            </p>
+            <button
+              type="button"
+              onClick={() => navigate('/login')}
+              className={`${buttonVariant('secondary')} ${designTokens.radius.lg} ml-4 shrink-0 text-sm`}
+            >
+              {t('chat.loginCta')}
+            </button>
+          </div>
         ) : null}
       </div>
     </>

@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /*/settings
+Disallow: /*/login
 
 Sitemap: https://{{VITE_APP_DOMAIN}}/sitemap.xml

@@ -34,7 +34,7 @@ export default function LoginPage() {
 
   useEffect(() => {
     if (!loading && user) {
-      navigate(`/${lang || 'en'}/histories`, { replace: true });
+      navigate(`/${lang || 'en'}/chat`, { replace: true });
     }
   }, [user, loading, navigate, lang]);
 
@@ -85,7 +85,7 @@ export default function LoginPage() {
         }}
         onSuccess={() => {
           analyticsService.trackEvent('login_success');
-          navigate(`/${lang || 'en'}/histories`, { replace: true });
+          navigate(`/${lang || 'en'}/chat`, { replace: true });
         }}
       />
     </>

@@ -41,12 +41,39 @@
     "title": "Chat",
     "thinking": "Pensando...",
     "submit": "Invia",
-    "newConversation": "Nuova conversazione"
+    "newConversation": "Nuova conversazione",
+    "webSearchDisclaimer": "Accedi per ottenere risposte in tempo reale con dati in tempo reale",
+    "loginCta": "Accedi o crea un account"
   },
   "docs": {
     "title": "Documentation",
     "description": "Documentazione tecnica per l'ecosistema del progetto",
-    "overview": "Panoramica"
+    "githubRepo": "Visualizza su GitHub",
+    "sections": {
+      "overview": "Panoramica",
+      "howItWorks": "Come funziona",
+      "chat": "Chat",
+      "layouts": "Layout",
+      "maps": "Mappe e luoghi",
+      "clarification": "Chiarimento",
+      "webSearch": "Ricerca web"
+    },
+    "content": {
+      "overviewTitle": "Cos'è Genuivo?",
+      "overviewBody": "Genuivo è un assistente alimentato da intelligenza artificiale che risponde alle tue domande con un'interfaccia utente ricca e interattiva, non solo con testo semplice. Chiedi informazioni su ristoranti, case in vendita, viaggi o qualsiasi altra cosa, e ricevi mappe, elenchi, collegamenti e risposte strutturate su cui puoi agire.",
+      "howItWorksTitle": "Come funziona",
+      "howItWorksBody": "Quando fai una domanda, Genuivo invia la tua richiesta a un'intelligenza artificiale che comprende come creare interfacce visive. Al posto di restituire un muro di testo, restituisce un albero UI strutturato — una combinazione di titoli, elenchi, mappe, schede e controlli di input che l'app renderizza nativamente. Se ha bisogno di ulteriori informazioni da te, chiede tramite campi di input. Se ha bisogno di dati in tempo reale, cerca automaticamente su internet.",
+      "chatTitle": "Chat",
+      "chatBody": "La pagina Chat è il tuo principale punto di interazione. Digita la tua domanda e l'IA risponde con una risposta visiva. Se l'IA ha bisogno di ulteriori informazioni (come la tua città o le tue preferenze), mostrerà campi di input perché tu possa compilare. Una volta raccolte informazioni sufficienti, fornirà una risposta completa con la migliore disposizione del contenuto: una mappa per i luoghi, un elenco per i confronti, un paragrafo per le spiegazioni.",
+      "layoutsTitle": "Layout",
+      "layoutsBody": "Genuivo supporta un ampio set di layout per presentare informazioni:\n\n• Paragrafo — blocchi di testo per spiegazioni e sintesi\n• Elenco — elenchi verticali per informazioni passo-passo o elementi classificati\n• Griglia — griglie a due colonne per confronti visivi\n• Mappa — mappe interattive con segnalini per luoghi e indirizzi\n• Collegamenti — collegamenti cliccabili a siti esterni\n• Schede — schede con titolo, immagini, sottotitoli e dettagli\n• Campi di input — campi di testo, menu a tendina, selezionatori di data e comandi per raccogliere le tue preferenze",
+      "mapsTitle": "Mappe e luoghi",
+      "mapsBody": "Quando chiedi informazioni su luoghi fisici - ristoranti, negozi, case in vendita, parchi - Genuivo li mostra su una mappa interattiva con segnalini. Ogni segnalino mostra il nome del luogo e l'indirizzo. Sotto la mappa, un elenco complementare fornisce ulteriori dettagli. Tutte le coordinate e gli indirizzi provengono da dati verificati o da risultati di ricerca web in tempo reale.",
+      "clarificationTitle": "Chiarimento",
+      "clarificationBody": "Se la tua domanda manca informazioni fondamentali, l'IA chiederà prima di indovinare. Ad esempio, chiedere \"trovami un ristorante\" richiederà la tua città, la preferenza per il tipo di cucina e il budget. L'IA pone tutte le domande contemporaneamente - nessuna discussione a ritroso. Dopo aver inviato le risposte, fornisce immediatamente il risultato finale.",
+      "webSearchTitle": "Ricerca web",
+      "webSearchBody": "Per le domande che richiedono informazioni attuali e in tempo reale, come elenchi di aperture, eventi di oggi o prezzi in tempo reale, Genuivo cerca automaticamente su internet. Raccoglie i risultati da molteplici fonti, estrae i fatti rilevanti e li presenta in una struttura organizzata. Ottieni dati reali, non supposizioni."
+    }
   },
   "histories": {
     "title": "Histories",

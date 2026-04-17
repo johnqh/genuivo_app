@@ -1,7 +1,7 @@
 {
   "app": {
-    "name": "Starter",
-    "tagline": "A template project demonstrating the Sudobility architecture pattern."
+    "name": "Genuivo",
+    "tagline": "AI assistant with rich, interactive answers"
   },
   "breadcrumbs": {
     "home": "Home",
@@ -25,28 +25,55 @@
     "logout": "Log Out"
   },
   "home": {
-    "title": "Starter App",
-    "description": "This is a template project demonstrating the Sudobility architecture pattern. It shows how to build a full-stack application with shared types, a Hono API, TanStack Query hooks, Zustand stores, and a React web app.",
-    "viewDocs": "View Documentation",
+    "title": "Genuivo",
+    "description": "Ask anything and get maps, lists, links, and structured answers you can act on — not just plain text. Genuivo is an AI assistant that responds with rich, interactive UI.",
+    "viewDocs": "Learn More",
     "startChat": "Start Chat",
     "viewHistories": "View Histories",
-    "feature1Title": "Shared Types",
-    "feature1Desc": "TypeScript type definitions shared between frontend and backend for type safety across the stack.",
-    "feature2Title": "TanStack Query",
-    "feature2Desc": "Automatic caching, cache invalidation, and background refetching with TanStack Query hooks.",
-    "feature3Title": "Zustand Stores",
-    "feature3Desc": "Lightweight state management with Zustand for offline cache and business logic."
+    "feature1Title": "Interactive Answers",
+    "feature1Desc": "Get maps, lists, cards, and links instead of walls of text. Every answer is built for the content it presents.",
+    "feature2Title": "Smart Clarification",
+    "feature2Desc": "When your question needs more context, Genuivo asks with input fields — then delivers a complete answer in one step.",
+    "feature3Title": "Live Web Search",
+    "feature3Desc": "For real-time data like events, listings, and prices, Genuivo searches the web and structures the results for you."
   },
   "chat": {
     "title": "Chat",
     "thinking": "Thinking...",
     "submit": "Submit",
-    "newConversation": "New Conversation"
+    "newConversation": "New Conversation",
+    "webSearchDisclaimer": "Sign in to get real-time answers with live data",
+    "loginCta": "Log In or Create Account"
   },
   "docs": {
     "title": "Documentation",
-    "description": "Technical documentation for the project ecosystem",
-    "overview": "Overview"
+    "description": "Learn how Genuivo uses AI to answer your questions with rich, interactive UI",
+    "githubRepo": "View on GitHub",
+    "sections": {
+      "overview": "Overview",
+      "howItWorks": "How It Works",
+      "chat": "Chat",
+      "layouts": "Layouts",
+      "maps": "Maps & Places",
+      "clarification": "Clarification",
+      "webSearch": "Web Search"
+    },
+    "content": {
+      "overviewTitle": "What is Genuivo?",
+      "overviewBody": "Genuivo is an AI-powered assistant that responds to your questions with rich, interactive UI — not just plain text. Ask about restaurants, open houses, travel, or anything else, and get maps, lists, links, and structured answers you can act on.",
+      "howItWorksTitle": "How It Works",
+      "howItWorksBody": "When you ask a question, Genuivo sends your request to an AI that understands how to build visual interfaces. Instead of returning a wall of text, it returns a structured UI tree — a combination of titles, lists, maps, cards, and input controls that the app renders natively. If it needs more information from you, it asks with input fields. If it needs live data, it searches the web automatically.",
+      "chatTitle": "Chat",
+      "chatBody": "The Chat page is your main interaction point. Type your question, and the AI responds with a visual answer. If the AI needs more details (like your city or preferences), it will show input fields for you to fill in. Once it has enough information, it delivers a complete answer with the best layout for the content — a map for places, a list for comparisons, a paragraph for explanations.",
+      "layoutsTitle": "Layouts",
+      "layoutsBody": "Genuivo supports a rich set of layouts to present information:\n\n• Paragraph — text blocks for explanations and summaries\n• List — vertical lists for step-by-step info or ranked items\n• Grid — two-column grids for visual comparisons\n• Map — interactive maps with pins for places and addresses\n• Links — clickable links to external websites\n• Cards — titled cards with images, subtitles, and details\n• Inputs — text fields, dropdowns, date pickers, and toggles for gathering your preferences",
+      "mapsTitle": "Maps & Places",
+      "mapsBody": "When you ask about physical locations — restaurants, stores, open houses, parks — Genuivo displays them on an interactive map with pins. Each pin shows the place name and address. Below the map, a companion list provides additional details. All coordinates and addresses come from verified data or live web search results.",
+      "clarificationTitle": "Clarification",
+      "clarificationBody": "If your question is missing key details, the AI will ask before guessing. For example, asking \"find me a restaurant\" will prompt for your city, cuisine preference, and budget. The AI asks all questions at once — no back-and-forth. After you submit your answers, it delivers the final result immediately.",
+      "webSearchTitle": "Web Search",
+      "webSearchBody": "For questions that need current, real-time information — like open house listings, today's events, or live prices — Genuivo automatically searches the web. It gathers results from multiple sources, extracts the relevant facts, and presents them in a structured layout. You get real data, not guesses."
+    }
   },
   "histories": {
     "title": "Histories",

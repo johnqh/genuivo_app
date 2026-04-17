@@ -41,12 +41,39 @@
     "title": "Chat",
     "thinking": "Pensant...",
     "submit": "Soumettre",
-    "newConversation": "Nouvelle conversation"
+    "newConversation": "Nouvelle conversation",
+    "webSearchDisclaimer": "Connectez-vous pour obtenir des réponses en temps réel avec des données en direct",
+    "loginCta": "Se connecter ou créer un compte"
   },
   "docs": {
     "title": "Documentation",
     "description": "Documentation technique pour l'écosystème du projet",
-    "overview": "Aperçu"
+    "githubRepo": "Voir sur GitHub",
+    "sections": {
+      "overview": "Aperçu",
+      "howItWorks": "Comment ça marche",
+      "chat": "Chat",
+      "layouts": "Mise en page",
+      "maps": "Cartes et lieux",
+      "clarification": "Éclaircissement",
+      "webSearch": "Recherche web"
+    },
+    "content": {
+      "overviewTitle": "Qu'est-ce que Genuivo ?",
+      "overviewBody": "Genuivo est un assistant alimenté par l'IA qui répond à vos questions avec une interface utilisateur riche et interactive – pas seulement du texte brut. Posez des questions sur les restaurants, les maisons à visiter, les voyages ou tout autre sujet, et obtenez des cartes, des listes, des liens et des réponses structurées que vous pouvez mettre en œuvre.",
+      "howItWorksTitle": "Comment ça marche",
+      "howItWorksBody": "Lorsque vous posez une question, Genuivo envoie votre demande à une IA qui comprend comment créer des interfaces visuelles. Au lieu de renvoyer un mur de texte, elle renvoie un arbre d'interface utilisateur structuré – une combinaison de titres, listes, cartes, cartes, cartes et contrôles d'entrée que l'application rend nativement. Si elle a besoin de plus d'informations de votre part, elle vous le demande à l'aide de champs de saisie. Si elle a besoin de données en temps réel, elle recherche automatiquement sur le web.",
+      "chatTitle": "Chat",
+      "chatBody": "La page Chat est votre point d'interaction principal. Tapez votre question, et l'IA répond avec une réponse visuelle. Si l'IA a besoin de plus de détails (comme votre ville ou vos préférences), elle affichera des champs de saisie pour que vous les remplissiez. Une fois qu'elle dispose de suffisamment d'informations, elle fournit une réponse complète avec la meilleure mise en page pour le contenu : une carte pour les lieux, une liste pour les comparaisons, un paragraphe pour les explications.",
+      "layoutsTitle": "Mise en page",
+      "layoutsBody": "Genuivo prend en charge un large éventail de mises en page pour présenter des informations :\n\n• Paragraphe — blocs de texte pour les explications et les résumés\n• Liste — listes verticales pour les informations étape par étape ou les éléments classés\n• Grille — grilles à deux colonnes pour les comparaisons visuelles\n• Carte — cartes interactives avec des repères pour les lieux et adresses\n• Liens — liens cliquables vers des sites web externes\n• Cartes — cartes intitulées avec des images, sous-titres et détails\n• Champs de saisie — champs de texte, listes déroulantes, sélecteurs de date et boutons bascule pour recueillir vos préférences",
+      "mapsTitle": "Cartes et lieux",
+      "mapsBody": "Lorsque vous demandez des lieux physiques — restaurants, magasins, maisons ouvertes, parcs — Genuivo les affiche sur une carte interactive avec des repères. Chaque repère indique le nom de l'établissement et son adresse. En dessous de la carte, une liste complémentaire fournit des informations supplémentaires. Toutes les coordonnées et adresses proviennent de données vérifiées ou de résultats de recherche en temps réel sur le web.",
+      "clarificationTitle": "Éclaircissement",
+      "clarificationBody": "Si votre question manque des détails importants, l'IA posera des questions avant de deviner. Par exemple, demander \"trouvez-moi un restaurant\" déclenchera des questions sur votre ville, votre préférence de cuisine et votre budget. L'IA pose toutes les questions en même temps – pas de discussion itérative. Après avoir soumis vos réponses, elle vous fournit immédiatement le résultat final.",
+      "webSearchTitle": "Recherche web",
+      "webSearchBody": "Pour les questions nécessitant des informations actuelles et en temps réel, comme les annonces de visites, les événements d'aujourd'hui ou les prix en direct, Genuivo recherche automatiquement sur le web. Il collecte les résultats provenant de plusieurs sources, extrait les faits pertinents et les présente sous une forme structurée. Vous obtenez des données réelles, pas des suppositions."
+    }
   },
   "histories": {
     "title": "Histories",
