@@ -6,6 +6,7 @@
   "breadcrumbs": {
     "home": "ホーム",
     "docs": "ドキュメント",
+    "chat": "チャット",
     "histories": "歴史",
     "settings": "設定",
     "sitemap": "サイトマップ",
@@ -16,6 +17,7 @@
   "nav": {
     "home": "Home",
     "docs": "Documentation",
+    "chat": "チャット",
     "histories": "Histories",
     "settings": "Settings",
     "sitemap": "Sitemap",
@@ -26,6 +28,7 @@
     "title": "Starter App",
     "description": "This is a template project demonstrating the Sudobility architecture pattern. It shows how to build a full-stack application with shared types, a Hono API, TanStack Query hooks, Zustand stores, and a React web app.",
     "viewDocs": "View Documentation",
+    "startChat": "チャットを開始",
     "viewHistories": "View Histories",
     "feature1Title": "Shared Types",
     "feature1Desc": "TypeScript type definitions shared between frontend and backend for type safety across the stack.",
@@ -34,8 +37,16 @@
     "feature3Title": "Zustand Stores",
     "feature3Desc": "Lightweight state management with Zustand for offline cache and business logic."
   },
+  "chat": {
+    "title": "チャット",
+    "thinking": "考え中...",
+    "submit": "送信",
+    "newConversation": "新しい会話"
+  },
   "docs": {
-    "title": "Documentation"
+    "title": "Documentation",
+    "description": "プロジェクトエコシステムの技術文書",
+    "overview": "概要"
   },
   "histories": {
     "title": "Histories",
@@ -52,9 +63,19 @@
     "globalTotal": "Global Total",
     "percentage": "Your Share"
   },
+  "settings": {
+    "title": "設定"
+  },
+  "login": "Log In",
   "sitemap": {
     "languages": "Languages",
-    "mainPages": "Main Pages"
+    "mainPages": "Main Pages",
+    "description": "すべてのページとサポートされている言語を含むサイトマップ"
+  },
+  "error": {
+    "somethingWentWrong": "何かが間違いました",
+    "unexpectedError": "予期しないエラーが発生しました。",
+    "tryAgain": "もう一度試してみてください"
   },
   "common": {
     "cancel": "Cancel",
@@ -69,7 +90,6 @@
   "signIn": "Sign In",
   "signUp": "Sign Up",
   "logout": "Log Out",
-  "login": "Log In",
   "continueWithGoogle": "Continue with Google",
   "continueWithEmail": "Continue with Email",
   "sendResetLink": "Send Reset Link",

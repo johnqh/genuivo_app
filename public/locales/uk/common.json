@@ -6,6 +6,7 @@
   "breadcrumbs": {
     "home": "Головна",
     "docs": "Документація",
+    "chat": "Чат",
     "histories": "Історії",
     "settings": "Налаштування",
     "sitemap": "Карта сайту",
@@ -16,6 +17,7 @@
   "nav": {
     "home": "Home",
     "docs": "Documentation",
+    "chat": "Чат",
     "histories": "Histories",
     "settings": "Settings",
     "sitemap": "Sitemap",
@@ -26,6 +28,7 @@
     "title": "Starter App",
     "description": "This is a template project demonstrating the Sudobility architecture pattern. It shows how to build a full-stack application with shared types, a Hono API, TanStack Query hooks, Zustand stores, and a React web app.",
     "viewDocs": "View Documentation",
+    "startChat": "Почати чат",
     "viewHistories": "View Histories",
     "feature1Title": "Shared Types",
     "feature1Desc": "TypeScript type definitions shared between frontend and backend for type safety across the stack.",
@@ -34,8 +37,16 @@
     "feature3Title": "Zustand Stores",
     "feature3Desc": "Lightweight state management with Zustand for offline cache and business logic."
   },
+  "chat": {
+    "title": "Чат",
+    "thinking": "Думаю...",
+    "submit": "Надіслати",
+    "newConversation": "Новий розмов"
+  },
   "docs": {
-    "title": "Documentation"
+    "title": "Documentation",
+    "description": "Технічна документація для екосистеми проекту",
+    "overview": "Огляд"
   },
   "histories": {
     "title": "Histories",
@@ -52,9 +63,19 @@
     "globalTotal": "Global Total",
     "percentage": "Your Share"
   },
+  "settings": {
+    "title": "Налаштування"
+  },
+  "login": "Log In",
   "sitemap": {
     "languages": "Languages",
-    "mainPages": "Main Pages"
+    "mainPages": "Main Pages",
+    "description": "Карта сайту з усіма сторінками та підтримуваними мовами"
+  },
+  "error": {
+    "somethingWentWrong": "Щось пішло не так",
+    "unexpectedError": "Виникла неочікувана помилка",
+    "tryAgain": "Спробуйте ще раз"
   },
   "common": {
     "cancel": "Cancel",
@@ -69,7 +90,6 @@
   "signIn": "Sign In",
   "signUp": "Sign Up",
   "logout": "Log Out",
-  "login": "Log In",
   "continueWithGoogle": "Continue with Google",
   "continueWithEmail": "Continue with Email",
   "sendResetLink": "Send Reset Link",

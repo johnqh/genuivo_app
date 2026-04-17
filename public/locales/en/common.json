@@ -37,8 +37,16 @@
     "feature3Title": "Zustand Stores",
     "feature3Desc": "Lightweight state management with Zustand for offline cache and business logic."
   },
+  "chat": {
+    "title": "Chat",
+    "thinking": "Thinking...",
+    "submit": "Submit",
+    "newConversation": "New Conversation"
+  },
   "docs": {
-    "title": "Documentation"
+    "title": "Documentation",
+    "description": "Technical documentation for the project ecosystem",
+    "overview": "Overview"
   },
   "histories": {
     "title": "Histories",
@@ -55,9 +63,24 @@
     "globalTotal": "Global Total",
     "percentage": "Your Share"
   },
+  "settings": {
+    "title": "Settings"
+  },
+  "login": {
+    "title": "Log In",
+    "description": "Sign in to {{appName}}",
+    "loadingAuth": "Loading authentication",
+    "firebaseNotConfigured": "Firebase not configured"
+  },
   "sitemap": {
     "languages": "Languages",
-    "mainPages": "Main Pages"
+    "mainPages": "Main Pages",
+    "description": "Site map with all pages and supported languages"
+  },
+  "error": {
+    "somethingWentWrong": "Something went wrong",
+    "unexpectedError": "An unexpected error occurred.",
+    "tryAgain": "Try again"
   },
   "common": {
     "cancel": "Cancel",

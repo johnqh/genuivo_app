@@ -42,7 +42,7 @@ export default function SitemapPage() {
       <SEO
         config={seoConfig}
         title={t('nav.sitemap')}
-        description="Site map with all pages and supported languages"
+        description={t('sitemap.description')}
         canonical={`/${lang || 'en'}/sitemap`}
       />
       <h1 className={`${textVariants.heading.h3()} mb-8`}>{t('nav.sitemap')}</h1>

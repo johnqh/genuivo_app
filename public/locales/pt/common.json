@@ -6,6 +6,7 @@
   "breadcrumbs": {
     "home": "Início",
     "docs": "Documentação",
+    "chat": "Chat",
     "histories": "Histórias",
     "settings": "Configurações",
     "sitemap": "Mapa do site",
@@ -16,6 +17,7 @@
   "nav": {
     "home": "Home",
     "docs": "Documentation",
+    "chat": "Chat",
     "histories": "Histories",
     "settings": "Settings",
     "sitemap": "Sitemap",
@@ -26,6 +28,7 @@
     "title": "Starter App",
     "description": "This is a template project demonstrating the Sudobility architecture pattern. It shows how to build a full-stack application with shared types, a Hono API, TanStack Query hooks, Zustand stores, and a React web app.",
     "viewDocs": "View Documentation",
+    "startChat": "Iniciar bate-papo",
     "viewHistories": "View Histories",
     "feature1Title": "Shared Types",
     "feature1Desc": "TypeScript type definitions shared between frontend and backend for type safety across the stack.",
@@ -34,8 +37,16 @@
     "feature3Title": "Zustand Stores",
     "feature3Desc": "Lightweight state management with Zustand for offline cache and business logic."
   },
+  "chat": {
+    "title": "Chat",
+    "thinking": "Pensando...",
+    "submit": "Enviar",
+    "newConversation": "Nova conversa"
+  },
   "docs": {
-    "title": "Documentation"
+    "title": "Documentation",
+    "description": "Documentação técnica para o ecossistema do projeto",
+    "overview": "Visão geral"
   },
   "histories": {
     "title": "Histories",
@@ -52,9 +63,19 @@
     "globalTotal": "Global Total",
     "percentage": "Your Share"
   },
+  "settings": {
+    "title": "Configurações"
+  },
+  "login": "Log In",
   "sitemap": {
     "languages": "Languages",
-    "mainPages": "Main Pages"
+    "mainPages": "Main Pages",
+    "description": "Mapa do site com todas as páginas e idiomas suportados"
+  },
+  "error": {
+    "somethingWentWrong": "Algo deu errado",
+    "unexpectedError": "Ocorreu um erro inesperado.",
+    "tryAgain": "Tente novamente"
   },
   "common": {
     "cancel": "Cancel",
@@ -69,7 +90,6 @@
   "signIn": "Sign In",
   "signUp": "Sign Up",
   "logout": "Log Out",
-  "login": "Log In",
   "continueWithGoogle": "Continue with Google",
   "continueWithEmail": "Continue with Email",
   "sendResetLink": "Send Reset Link",

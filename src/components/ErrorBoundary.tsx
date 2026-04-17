@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import type { ErrorInfo, ReactNode } from 'react';
+import i18n from 'i18next';
 import { textVariants, buttonVariant, designTokens } from '@sudobility/design';
 import { analyticsService } from '../config/analytics';
 
@@ -54,15 +55,17 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
       return (
         <div role="alert" className="min-h-[400px] flex flex-col items-center justify-center p-8">
           <div className="max-w-md text-center">
-            <h2 className={`${textVariants.heading.h4()} mb-2`}>Something went wrong</h2>
+            <h2 className={`${textVariants.heading.h4()} mb-2`}>
+              {i18n.t('error.somethingWentWrong')}
+            </h2>
             <p className={`${textVariants.body.md()} mb-4`}>
-              {this.state.error?.message || 'An unexpected error occurred.'}
+              {this.state.error?.message || i18n.t('error.unexpectedError')}
             </p>
             <button
               onClick={this.handleRetry}
               className={`${buttonVariant('primary')} ${designTokens.radius.lg} text-sm`}
             >
-              Try again
+              {i18n.t('error.tryAgain')}
             </button>
           </div>
         </div>

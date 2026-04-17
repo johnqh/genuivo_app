@@ -112,7 +112,7 @@ export default function DocsPage() {
       <SEO
         config={seoConfig}
         title={t('docs.title')}
-        description="Technical documentation for the Starter project ecosystem"
+        description={t('docs.description')}
         canonical={`/${lang || 'en'}/docs`}
       />
       <MasterDetailLayout

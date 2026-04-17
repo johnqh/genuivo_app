@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { GenUI } from '@sudobility/genui';
 import { Button } from '@sudobility/components';
 import { useApi } from '@sudobility/building_blocks/firebase';
@@ -10,6 +11,7 @@ import { seoConfig } from '../config/seo';
 import { analyticsService } from '../config/analytics';
 
 export default function ChatPage() {
+  const { t } = useTranslation('common');
   useSetPageConfig({ maxWidth: '4xl', contentPadding: 'md' });
 
   useEffect(() => {
@@ -25,7 +27,7 @@ export default function ChatPage() {
 
   return (
     <>
-      <SEO config={seoConfig} title="Chat" noIndex />
+      <SEO config={seoConfig} title={t('chat.title')} noIndex />
       <div className="space-y-4">
         <GenUI
           renderable={currentRenderable}
@@ -45,19 +47,24 @@ export default function ChatPage() {
         {isLoading ? (
           <div className="flex items-center justify-center py-8">
             <div className="h-6 w-6 animate-spin rounded-full border-2 border-slate-300 border-t-slate-600" />
-            <span className="ml-3 text-sm text-slate-500">Thinking...</span>
+            <span className="ml-3 text-sm text-slate-500">{t('chat.thinking')}</span>
           </div>
         ) : null}
 
         {showSubmit && !isLoading ? (
-          <Button type="button" onClick={handleSubmit} className="w-full">
-            Submit
+          <Button type="button" onClick={handleSubmit} className="w-full hover:scale-100">
+            {t('chat.submit')}
           </Button>
         ) : null}
 
         {showRestart ? (
-          <Button type="button" variant="secondary" onClick={restart} className="w-full">
-            New Conversation
+          <Button
+            type="button"
+            variant="secondary"
+            onClick={restart}
+            className="w-full hover:scale-100"
+          >
+            {t('chat.newConversation')}
           </Button>
         ) : null}
       </div>

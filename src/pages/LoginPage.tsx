@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useAuthStatus } from '@sudobility/auth-components';
 import { getFirebaseAuth } from '@sudobility/auth_lib';
@@ -21,6 +22,7 @@ import { analyticsService } from '../config/analytics';
  * to the histories page.
  */
 export default function LoginPage() {
+  const { t } = useTranslation('common');
   const { user, loading } = useAuthStatus();
   const navigate = useNavigate();
   const { lang } = useParams<{ lang: string }>();
@@ -41,7 +43,7 @@ export default function LoginPage() {
       <div className="min-h-screen flex items-center justify-center bg-theme-bg-primary">
         <div
           role="status"
-          aria-label="Loading authentication"
+          aria-label={t('login.loadingAuth')}
           className={variants.loading.spinner.default()}
         />
       </div>
@@ -52,7 +54,7 @@ export default function LoginPage() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-theme-bg-primary">
         <p role="alert" className={ui.text.error}>
-          Firebase not configured
+          {t('login.firebaseNotConfigured')}
         </p>
       </div>
     );
@@ -62,8 +64,8 @@ export default function LoginPage() {
     <>
       <SEO
         config={seoConfig}
-        title="Login"
-        description={`Sign in to ${CONSTANTS.APP_NAME}`}
+        title={t('login.title')}
+        description={t('login.description', { appName: CONSTANTS.APP_NAME })}
         canonical={`/${lang || 'en'}/login`}
       />
       <LoginPageComponent
