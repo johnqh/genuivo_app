@@ -2,7 +2,7 @@
   "name": "@sudobility/genuivo_app",
   "private": true,
   "license": "BUSL-1.1",
-  "version": "1.0.86",
+  "version": "1.0.87",
   "type": "module",
   "scripts": {
     "dev": "bun run process:static && vite",
@@ -29,7 +29,7 @@
     "@radix-ui/react-tabs": "^1.1.13",
     "@sudobility/auth-components": "^1.0.10",
     "@sudobility/auth_lib": "^0.0.70",
-    "@sudobility/building_blocks": "^0.0.227",
+    "@sudobility/building_blocks": "^0.0.228",
     "@sudobility/components": "^5.0.62",
     "@sudobility/design": "^1.1.29",
     "@sudobility/devops-components": "^2.0.19",
