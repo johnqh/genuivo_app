@@ -2,7 +2,7 @@
   "name": "@sudobility/genuivo_app",
   "private": true,
   "license": "BUSL-1.1",
-  "version": "1.0.85",
+  "version": "1.0.86",
   "type": "module",
   "scripts": {
     "dev": "bun run process:static && vite",
@@ -34,7 +34,7 @@
     "@sudobility/design": "^1.1.29",
     "@sudobility/devops-components": "^2.0.19",
     "@sudobility/di": "^1.5.52",
-    "@sudobility/di_web": "^0.1.173",
+    "@sudobility/di_web": "^0.1.174",
     "@sudobility/entity_client": "^0.0.34",
     "@sudobility/genui": "^0.1.46",
     "@sudobility/genuivo_client": "^0.0.25",
