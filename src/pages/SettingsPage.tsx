@@ -1,10 +1,9 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { GlobalSettingsPage } from '@sudobility/building_blocks';
-import { SEO } from '@sudobility/seo_lib';
 import { useTheme } from '@sudobility/components';
 import { useSetPageConfig } from '../hooks/usePageConfig';
-import { seoConfig } from '../config/seo';
+import SEOHead from '../components/SEOHead';
 import { analyticsService } from '../config/analytics';
 import { useBuildingBlocksAnalytics } from '../hooks/useBuildingBlocksAnalytics';
 
@@ -22,7 +21,7 @@ export default function SettingsPage() {
 
   return (
     <>
-      <SEO config={seoConfig} title={t('settings.title')} noIndex />
+      <SEOHead title={t('settings.title')} description="" noIndex />
       <GlobalSettingsPage
         theme={theme}
         fontSize={fontSize}

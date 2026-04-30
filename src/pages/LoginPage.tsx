@@ -9,11 +9,10 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
 } from 'firebase/auth';
-import { SEO } from '@sudobility/seo_lib';
 import { LoginPage as LoginPageComponent } from '@sudobility/building_blocks';
 import { variants, ui } from '@sudobility/design';
 import { CONSTANTS } from '../config/constants';
-import { seoConfig } from '../config/seo';
+import SEOHead from '../components/SEOHead';
 import { analyticsService } from '../config/analytics';
 
 /**
@@ -62,12 +61,7 @@ export default function LoginPage() {
 
   return (
     <>
-      <SEO
-        config={seoConfig}
-        title={t('login.title')}
-        description={t('login.description', { appName: CONSTANTS.APP_NAME })}
-        canonical={`/${lang || 'en'}/login`}
-      />
+      <SEOHead title={t('login.title')} description="" noIndex />
       <LoginPageComponent
         appName={CONSTANTS.APP_NAME}
         logo={<img src="/logo.png" alt={CONSTANTS.APP_NAME} className="h-12" />}

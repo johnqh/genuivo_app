@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useParams } from 'react-router-dom';
-import { SEO, useSEOUpdate } from '@sudobility/seo_lib';
 import { MasterDetailLayout } from '@sudobility/components';
 import { textVariants, ui, designTokens } from '@sudobility/design';
 import { useSetPageConfig } from '../hooks/usePageConfig';
-import { seoConfig } from '../config/seo';
+import SEOHead from '../components/SEOHead';
 import { analyticsService } from '../config/analytics';
 
 const SECTION_IDS = [
@@ -35,7 +33,6 @@ const CONTENT_KEYS: Record<SectionId, { title: string; body: string }> = {
 
 export default function DocsPage() {
   const { t } = useTranslation('common');
-  const { lang } = useParams<{ lang: string }>();
   const [activeSection, setActiveSection] = useState<SectionId>('overview');
   const [mobileView, setMobileView] = useState<'navigation' | 'content'>('navigation');
 
@@ -47,12 +44,9 @@ export default function DocsPage() {
 
   const keys = CONTENT_KEYS[activeSection];
 
-  // React 19 + react-helmet-async workaround
-  useSEOUpdate({
-    title: t(keys.title),
-    description: t(`docs.seo.${activeSection}`, t('docs.description')),
-    appName: seoConfig.appName,
-  });
+  const seoTitle = t('seo.docs.title');
+  const seoDescription = t('seo.docs.description');
+  const seoKeywords = t('seo.docs.keywords', { returnObjects: true }) as string[];
 
   const masterContent = (
     <>
@@ -106,11 +100,10 @@ export default function DocsPage() {
 
   return (
     <div className="w-full min-w-0 overflow-x-hidden flex-1 flex flex-col min-h-0">
-      <SEO
-        config={seoConfig}
-        title={t(keys.title)}
-        description={t(`docs.seo.${activeSection}`, t('docs.description'))}
-        canonical={`/${lang || 'en'}/docs`}
+      <SEOHead
+        title={seoTitle}
+        description={seoDescription}
+        keywords={seoKeywords}
         ogType="article"
       />
       <MasterDetailLayout

@@ -113,6 +113,41 @@
     "mainPages": "Main Pages",
     "description": "Site map with all pages and supported languages"
   },
+  "seo": {
+    "home": {
+      "title": "Genuivo - AI Assistant with Interactive Answers",
+      "description": "Ask anything and get maps, lists, links, and structured answers you can act on. Genuivo is an AI assistant that responds with rich, interactive UI.",
+      "keywords": [
+        "AI assistant",
+        "interactive answers",
+        "AI chat",
+        "smart search",
+        "maps and lists",
+        "structured answers",
+        "genuivo"
+      ]
+    },
+    "docs": {
+      "title": "Documentation - How Genuivo Works | Genuivo",
+      "description": "Learn how Genuivo uses AI to answer your questions with rich, interactive UI including maps, lists, cards, and structured layouts.",
+      "keywords": [
+        "genuivo documentation",
+        "AI assistant guide",
+        "interactive UI",
+        "how genuivo works",
+        "AI chat documentation"
+      ]
+    },
+    "sitemap": {
+      "title": "Sitemap | Genuivo",
+      "description": "Browse all pages and supported languages available on Genuivo.",
+      "keywords": [
+        "genuivo sitemap",
+        "genuivo pages",
+        "genuivo languages"
+      ]
+    }
+  },
   "error": {
     "somethingWentWrong": "Something went wrong",
     "unexpectedError": "An unexpected error occurred.",

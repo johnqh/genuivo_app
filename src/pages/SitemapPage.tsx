@@ -1,12 +1,10 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useParams } from 'react-router-dom';
-import { SEO } from '@sudobility/seo_lib';
 import { Section } from '@sudobility/components';
 import { textVariants, designTokens, ui } from '@sudobility/design';
 import LocalizedLink from '../components/layout/LocalizedLink';
 import { SUPPORTED_LANGUAGES } from '../config/constants';
-import { seoConfig } from '../config/seo';
+import SEOHead from '../components/SEOHead';
 import { analyticsService } from '../config/analytics';
 
 const LANGUAGE_INFO: Record<string, { label: string; flag: string }> = {
@@ -31,19 +29,21 @@ const LANGUAGE_INFO: Record<string, { label: string; flag: string }> = {
 /** Sitemap page listing all supported languages and main navigation links. */
 export default function SitemapPage() {
   const { t } = useTranslation('common');
-  const { lang } = useParams<{ lang: string }>();
 
   useEffect(() => {
     analyticsService.trackPageView('/sitemap', 'Sitemap');
   }, []);
 
+  const seoTitle = t('seo.sitemap.title');
+  const seoDescription = t('seo.sitemap.description');
+  const seoKeywords = t('seo.sitemap.keywords', { returnObjects: true }) as string[];
+
   return (
     <Section spacing="md">
-      <SEO
-        config={seoConfig}
-        title={t('nav.sitemap')}
-        description={t('sitemap.description')}
-        canonical={`/${lang || 'en'}/sitemap`}
+      <SEOHead
+        title={seoTitle}
+        description={seoDescription}
+        keywords={seoKeywords}
       />
       <h1 className={`${textVariants.heading.h3()} mb-8`}>{t('nav.sitemap')}</h1>
 

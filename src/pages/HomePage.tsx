@@ -1,30 +1,38 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useParams } from 'react-router-dom';
-import { SEO } from '@sudobility/seo_lib';
 import { Section } from '@sudobility/components';
 import { textVariants, buttonVariant, designTokens, ui } from '@sudobility/design';
 import LocalizedLink from '../components/layout/LocalizedLink';
-import { seoConfig } from '../config/seo';
+import SEOHead from '../components/SEOHead';
+import { buildHowToSchema } from '../components/buildHowToSchema';
 import { analyticsService } from '../config/analytics';
 
 /** Landing page showcasing the application's key features and entry points. */
 export default function HomePage() {
   const { t } = useTranslation('common');
-  const { lang } = useParams<{ lang: string }>();
+  const { t: tHowTo } = useTranslation('howto');
 
   useEffect(() => {
     analyticsService.trackPageView('/', 'Home');
   }, []);
 
+  const seoTitle = t('seo.home.title');
+  const seoDescription = t('seo.home.description');
+  const seoKeywords = t('seo.home.keywords', { returnObjects: true }) as string[];
+
+  const howToSchema = buildHowToSchema(
+    tHowTo('home.name'),
+    tHowTo('home.description'),
+    tHowTo('home.steps', { returnObjects: true }) as { name: string; text: string }[]
+  );
+
   return (
     <article>
-      <SEO
-        config={seoConfig}
-        title={t('home.title')}
-        description={t('home.description')}
-        canonical={`/${lang || 'en'}`}
-        ogType="website"
+      <SEOHead
+        title={seoTitle}
+        description={seoDescription}
+        keywords={seoKeywords}
+        structuredData={howToSchema}
       />
       <Section spacing="5xl" variant="hero" maxWidth="3xl">
         <header className="text-center">

@@ -1,0 +1,34 @@
+{
+  "home": {
+    "name": "How to Use Genuivo AI Assistant",
+    "description": "Get started with Genuivo, the AI assistant that responds with rich, interactive UI instead of plain text.",
+    "steps": [
+      {
+        "name": "Ask a Question",
+        "text": "Type your question in the chat. Ask about restaurants, travel, events, or anything else."
+      },
+      {
+        "name": "Get Interactive Answers",
+        "text": "Genuivo responds with maps, lists, cards, and structured layouts tailored to your question."
+      },
+      {
+        "name": "Provide Details When Asked",
+        "text": "If the AI needs more context, it shows input fields to gather your preferences in one step."
+      },
+      {
+        "name": "Explore Results",
+        "text": "Browse the visual answers, tap map pins, follow links, and act on the structured information."
+      }
+    ]
+  },
+  "webApp": {
+    "description": "Genuivo is an AI assistant that responds with rich, interactive UI. Ask anything and get maps, lists, links, and structured answers you can act on.",
+    "features": [
+      "Interactive AI answers with maps, lists, and cards",
+      "Smart clarification with input fields",
+      "Live web search for real-time data",
+      "Conversation history",
+      "Multi-language support"
+    ]
+  }
+}

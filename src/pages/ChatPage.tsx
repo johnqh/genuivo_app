@@ -2,13 +2,12 @@ import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { GenUI } from '@sudobility/genui';
 import { useApi } from '@sudobility/building_blocks/firebase';
-import { SEO } from '@sudobility/seo_lib';
 import { buttonVariant, designTokens } from '@sudobility/design';
 import { useChatManager, hasInputControls } from '@sudobility/genuivo_lib';
 import { useSetPageConfig } from '../hooks/usePageConfig';
 import { useLocalizedNavigate } from '../hooks/useLocalizedNavigate';
 import { GOOGLE_MAPS_API_KEY } from '../config/chat';
-import { seoConfig } from '../config/seo';
+import SEOHead from '../components/SEOHead';
 import { analyticsService } from '../config/analytics';
 
 export default function ChatPage() {
@@ -30,7 +29,7 @@ export default function ChatPage() {
 
   return (
     <>
-      <SEO config={seoConfig} title={t('chat.title')} noIndex />
+      <SEOHead title={t('chat.title')} description="" noIndex />
       <div className="space-y-4">
         <GenUI
           renderable={currentRenderable}
