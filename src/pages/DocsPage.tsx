@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
-import { SEO } from '@sudobility/seo_lib';
+import { SEO, useSEOUpdate } from '@sudobility/seo_lib';
 import { MasterDetailLayout } from '@sudobility/components';
 import { textVariants, ui, designTokens } from '@sudobility/design';
 import { useSetPageConfig } from '../hooks/usePageConfig';
@@ -46,6 +46,13 @@ export default function DocsPage() {
   }, []);
 
   const keys = CONTENT_KEYS[activeSection];
+
+  // React 19 + react-helmet-async workaround
+  useSEOUpdate({
+    title: t(keys.title),
+    description: t(`docs.seo.${activeSection}`, t('docs.description')),
+    appName: seoConfig.appName,
+  });
 
   const masterContent = (
     <>
@@ -101,9 +108,10 @@ export default function DocsPage() {
     <div className="w-full min-w-0 overflow-x-hidden flex-1 flex flex-col min-h-0">
       <SEO
         config={seoConfig}
-        title={t('docs.title')}
-        description={t('docs.description')}
+        title={t(keys.title)}
+        description={t(`docs.seo.${activeSection}`, t('docs.description'))}
         canonical={`/${lang || 'en'}/docs`}
+        ogType="article"
       />
       <MasterDetailLayout
         masterTitle={t('docs.title')}

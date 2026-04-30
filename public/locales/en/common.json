@@ -48,6 +48,15 @@
   "docs": {
     "title": "Documentation",
     "description": "Learn how Genuivo uses AI to answer your questions with rich, interactive UI",
+    "seo": {
+      "overview": "What is Genuivo? An AI assistant that responds with rich, interactive UI — maps, lists, cards, and structured answers instead of plain text.",
+      "howItWorks": "How Genuivo works. The AI builds visual UI trees — titles, lists, maps, and input controls — rendered natively in the app.",
+      "chat": "Chat with Genuivo's AI. Ask questions and get visual answers with maps, lists, and structured layouts — not walls of text.",
+      "layouts": "Genuivo layout types: paragraphs, lists, grids, maps, links, cards, and input controls for rich AI-generated interfaces.",
+      "maps": "Interactive maps in Genuivo. Ask about restaurants, stores, or locations and see them plotted with pins and details.",
+      "clarification": "How Genuivo asks for clarification. The AI gathers missing details upfront — no back-and-forth — then delivers the final answer.",
+      "webSearch": "Genuivo's web search. Real-time data from multiple sources, extracted and presented in structured layouts."
+    },
     "githubRepo": "View on GitHub",
     "sections": {
       "overview": "Overview",
