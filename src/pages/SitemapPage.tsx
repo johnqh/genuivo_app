@@ -40,11 +40,7 @@ export default function SitemapPage() {
 
   return (
     <Section spacing="md">
-      <SEOHead
-        title={seoTitle}
-        description={seoDescription}
-        keywords={seoKeywords}
-      />
+      <SEOHead title={seoTitle} description={seoDescription} keywords={seoKeywords} />
       <h1 className={`${textVariants.heading.h3()} mb-8`}>{t('nav.sitemap')}</h1>
 
       {/* Languages */}
