@@ -7,7 +7,7 @@ import { useChatManager, hasInputControls } from '@sudobility/genuivo_lib';
 import { useSetPageConfig } from '../hooks/usePageConfig';
 import { useLocalizedNavigate } from '../hooks/useLocalizedNavigate';
 import { GOOGLE_MAPS_API_KEY } from '../config/chat';
-import SEOHead from '../components/SEOHead';
+import { SEOHead } from '@sudobility/seo_lib';
 import { analyticsService } from '../config/analytics';
 
 export default function ChatPage() {
